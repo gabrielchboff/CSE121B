@@ -1,0 +1,15 @@
+html {
+    color: white;
+} 
+
+label {
+    color: white !important;
+}
+
+h1 {
+    color: white;
+}
+
+.uk-badge {
+    margin-left: 1rem;
+}

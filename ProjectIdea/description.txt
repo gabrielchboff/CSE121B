@@ -1,0 +1,17 @@
+Passgen: Password Generator
+The personal goal to this project is achieve more understanding 
+about security and password management.
+What will be built? 
+It will be a password generator called passgen.
+What will it do? 
+It will generate multiple random passwords based on your specifications.
+In the page you will be able to: 
+- adds number to the password;
+- adds special character to the password;
+- adds uppercase alphabets to the password; 
+- generates a 18 character password or any other length. Must be greater than 7. Default is 12;
+- all these options are boolean, except the length;
+- it will generate multiple passwords based on your specifications to increase options.
+What will be the source of your external data?
+The source will be the passwordinator (https://github.com/fawazsullia/password-generator/).
+This api provides all the tools needed.

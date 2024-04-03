@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" class="uk-background-secondary">
+    <head>
+        <title>Passgen</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.19.2/dist/css/uikit.min.css" />
+
+        <link href="styles/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="uk-container uk-padding" id="container">
+            <h1>Passgen</h1>
+            <form class="uk-form-small">
+                <fieldset class="uk-fieldset">
+                    <div class="uk-margin">
+                        <legend class="uk-legend">Generate a Random Password</legend>
+                    </div>
+
+                    <div class="uk-margin">
+                        <label class="uk-form-label uk-padding" for="length">Password Length</label>
+                        <input class="uk-input uk-form-width-medium" id="length" type="number" min="8" max="128" value="16">
+                    </div>
+
+                    <div class="uk-margin">
+                        <label class="uk-form-label uk-padding" for="char">Include Special Characters</label>
+                        <input class="uk-checkbox" id="char" type="checkbox">
+                    </div>
+                    
+                    <div class="uk-margin">
+                        <label class="uk-form-label uk-padding" for="num">Include Numbers</label>
+                        <input class="uk-checkbox" id="num" type="checkbox">
+                        <span class="uk-badge">Just numbers is not secure, please mark other options also</span>
+                    </div>
+
+                    <div class="uk-margin">
+                        <label class="uk-form-label uk-padding" for="upper">Include Uppercase</label>
+                        <input class="uk-checkbox" id="upper" type="checkbox">
+                    </div>
+
+
+                    <div class="uk-margin">
+                        <a class="uk-button uk-button-primary" href="javascript:void(0);" id="generate">Generate Password</a>
+                    </div>
+
+                    <div class="uk-margin uk-inline">
+                        <a class="uk-form-icon uk-form-icon-flip" href="javascript:void(0);" uk-icon="icon: copy" id="copy" ></a>
+                        <input class="uk-input uk-form-width-large" id="password" type="text" name="password" value="****" >
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.19.2/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.19.2/dist/js/uikit-icons.min.js"></script>
+    <script src="scripts/main.js"></script>
+</html>
