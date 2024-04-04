@@ -49,6 +49,13 @@ copy.addEventListener('click', () => {
             timeout: 4000
         })
         
+    } else if (password.value == "****"){
+        UIkit.notification({
+            message: 'Password not generated',
+            status: 'danger',
+            pos: 'top-center',
+            timeout: 4000
+        })
     } else {
         navigator.clipboard.writeText(password.value)
         .then(() => {
